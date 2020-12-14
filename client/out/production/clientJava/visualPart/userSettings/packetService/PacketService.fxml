@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.userSettings.packetService.ControllerPacketService">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <Label layoutX="170.0" layoutY="50.0" prefHeight="50.0" prefWidth="250.0" text="Информация о текущем пакете услуг">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <VBox layoutX="100.0" layoutY="108.0" prefHeight="250.0" prefWidth="400.0">
+         <children>
+            <HBox prefHeight="80.0" prefWidth="262.0">
+               <children>
+                  <Label prefHeight="50.0" text="Тарифный план" />
+                  <TextField fx:id="tariffPlanTextField" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets left="50.0" top="13.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="80.0" prefWidth="166.0">
+               <children>
+                  <Label prefHeight="50.0" text="Цена" />
+                  <TextField fx:id="costTextField" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets left="107.0" top="13.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="50.0" text="Скорость" />
+                  <TextField fx:id="speedTextField" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets left="85.0" top="13.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

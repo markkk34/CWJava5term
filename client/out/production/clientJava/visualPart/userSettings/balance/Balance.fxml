@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.userSettings.balance.ControllerBalance">
+   <children>
+      <VBox layoutX="10.0" layoutY="100.0" prefHeight="280.0" prefWidth="260.0" spacing="70.0">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="247.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="98.0" text="Текущий баланс:" />
+                  <TextField fx:id="currentBalanceTextField" disable="true" prefHeight="40.0" />
+               </children>
+            </HBox>
+            <TextField fx:id="sumOfPaymentTextField" prefHeight="40.0" prefWidth="100.0" promptText="Сумма взноса $" />
+            <Button mnemonicParsing="false" onAction="#clickToPay" prefHeight="40.0" prefWidth="268.0" text="Пополнить" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="335.0" layoutY="20.0" prefHeight="49.0" prefWidth="200.0" text="История транзакций">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <ScrollPane layoutX="335.0" layoutY="80.0" prefHeight="300.0" prefWidth="200.0">
+         <content>
+            <VBox fx:id="transactionsVBox" prefHeight="226.0" prefWidth="267.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.adminSettings.workWithTariffPlans.ControllerWorkWithTariffPlans">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <TableView fx:id="usersTableView" layoutX="31.0" layoutY="84.0" onMouseClicked="#getSelectedRowLogin" prefHeight="200.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="loginTableColumn" prefWidth="93.20001411437988" text="Логин" />
+            <TableColumn fx:id="nameTableColumn" prefWidth="125.99996185302734" text="Имя" />
+          <TableColumn fx:id="tariffTableColumn" prefWidth="223.0" text="Тарифный план" />
+            <TableColumn fx:id="balanceTableColumn" prefWidth="92.40005493164062" text="Баланс" />
+        </columns>
+      </TableView>
+      <TextField fx:id="loginTextField" disable="true" layoutX="70.0" layoutY="324.0" prefHeight="25.0" prefWidth="111.0" />
+      <TextField fx:id="balanceTextField" layoutX="269.0" layoutY="324.0" prefHeight="25.0" prefWidth="48.0" />
+      <Button layoutX="329.0" layoutY="308.0" mnemonicParsing="false" onAction="#clickToPlusBalance" prefHeight="4.0" prefWidth="48.0" text="+" />
+      <Button layoutX="329.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickToMinusBalance" prefHeight="25.0" prefWidth="48.0" text="-" />
+      <Label layoutX="205.0" layoutY="324.0" prefHeight="25.0" prefWidth="48.0" text="Баланс" />
+      <Label layoutX="22.0" layoutY="320.0" prefHeight="32.0" prefWidth="48.0" text="Логин:" />
+      <Button layoutX="437.0" layoutY="312.0" mnemonicParsing="false" onAction="#clickToSaveChangesUserTariffBalance" prefHeight="50.0" prefWidth="120.0" text="Сохранить" />
+   </children>
+</Pane>

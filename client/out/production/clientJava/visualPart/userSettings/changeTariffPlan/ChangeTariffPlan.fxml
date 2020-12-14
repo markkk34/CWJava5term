@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.userSettings.changeTariffPlan.ControllerChangeTariffPlan">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <VBox layoutX="10.0" layoutY="200.0" prefHeight="150.0" prefWidth="230.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Тарифный план" />
+                  <TextField fx:id="tariffPlanTextField" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Стоимость" />
+                  <TextField fx:id="costTextField" prefHeight="26.0" prefWidth="147.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="100.0" text="Скорость" />
+                  <TextField fx:id="speedTextField" prefHeight="26.0" prefWidth="146.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="435.0" layoutY="200.0" prefHeight="150.0" prefWidth="158.0" spacing="20.0">
+         <children>
+            <TextField fx:id="newTariffPlanTextField" />
+            <TextField fx:id="newCostTextField" />
+            <TextField fx:id="newSpeedTextField" />
+         </children></VBox>
+      <Label layoutX="80.0" layoutY="330.0" prefHeight="41.0" prefWidth="106.0" text="Текущий тариф" />
+      <Label layoutX="245.0" layoutY="245.0" prefHeight="34.0" prefWidth="29.0" text="-&gt;" />
+      <ComboBox fx:id="tariffPlanComboBox" layoutX="262.0" layoutY="250.0" onAction="#clickToChooseTariffPlan" prefWidth="150.0" />
+      <Label layoutX="417.0" layoutY="245.0" prefHeight="34.0" prefWidth="29.0" text="-&gt;" />
+      <Label layoutX="320.0" layoutY="200.0" prefHeight="34.0" prefWidth="65.0" text="Выбор" />
+      <Label alignment="CENTER" layoutX="450.0" layoutY="330.0" prefHeight="50.0" prefWidth="130.0" text="Новый тариф" />
+      <Button layoutX="275.0" layoutY="337.0" mnemonicParsing="false" onAction="#clickToSave" prefHeight="50.0" prefWidth="120.0" text="Сохранить" />
+      <BarChart fx:id="differanceBarChart" layoutX="181.0" layoutY="10.0" prefHeight="123.0" prefWidth="265.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xCategoryAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yNumberAxis" prefHeight="85.0" prefWidth="28.0" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="440.0" layoutY="100.0" prefHeight="50.0" prefWidth="80.0" text="Разница" />
+   </children>
+</Pane>

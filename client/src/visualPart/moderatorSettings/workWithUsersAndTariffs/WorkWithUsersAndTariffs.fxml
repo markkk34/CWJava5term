@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.moderatorSettings.workWithUsersAndTariffs.ControllerWorkWithUsersAndTariffs">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <TableView fx:id="usersAndTariffsTableView" layoutX="70.0" layoutY="80.0" onMouseClicked="#getSelectedLoginAndTariff" prefHeight="200.0" prefWidth="471.0">
+        <columns>
+          <TableColumn fx:id="loginTableColumn" prefWidth="156.20001220703125" text="Логин" />
+          <TableColumn fx:id="tariffTableColumn" minWidth="0.0" prefWidth="164.5999755859375" text="Тарифный план" />
+            <TableColumn fx:id="passwordTableColumn" prefWidth="149.4000244140625" text="Пароль" />
+        </columns>
+      </TableView>
+      <Button layoutX="351.0" layoutY="365.0" mnemonicParsing="false" onAction="#clickToDeleteUser" prefWidth="150.0" text="Удалить" />
+      <Button layoutX="74.0" layoutY="365.0" mnemonicParsing="false" onAction="#clickToTurnOffUser" prefWidth="150.0" text="Отключить от тарифа" />
+      <TextField fx:id="tariffChangingTextField" disable="true" layoutX="74.0" layoutY="334.0" />
+      <TextField fx:id="loginChangingTextField" disable="true" layoutX="74.0" layoutY="294.0" />
+      <Label layoutX="26.0" layoutY="338.0" text="Тариф" />
+      <Label layoutX="26.0" layoutY="298.0" text="Логин" />
+      <ComboBox fx:id="usersComboBox" layoutX="351.0" layoutY="320.0" prefWidth="150.0" />
+      <Label layoutX="376.0" layoutY="298.0" prefHeight="17.0" prefWidth="102.0" text="Пользователи" />
+   </children>
+</Pane>
