@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@../pictures/background.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.registration.ControllerRegistration">
+   <children>
+      <Label alignment="CENTER" layoutX="100.0" layoutY="50.0" prefHeight="100.0" prefWidth="400.0" text="Регистрация">
+         <font>
+            <Font name="Segoe Print" size="50.0" />
+         </font></Label>
+      <TextField fx:id="loginTextField" layoutX="150.0" layoutY="200.0" prefHeight="30.0" prefWidth="300.0" promptText="Логин" />
+      <TextField fx:id="passwordTextField" layoutX="150.0" layoutY="250.0" prefHeight="30.0" prefWidth="300.0" promptText="Пароль" />
+      <CheckBox fx:id="showCheckBox" layoutX="475.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickToShowPassword" prefHeight="30.0" prefWidth="100.0" text="Показать" />
+      <Button fx:id="signUpButton" layoutX="314.0" layoutY="317.0" mnemonicParsing="false" onAction="#clickToSignUp" prefHeight="25.0" prefWidth="136.0" text="Зарегестрироваться" />
+      <Hyperlink fx:id="signInHyperlink" alignment="CENTER" layoutX="466.0" layoutY="329.0" onAction="#clickToSignIn" prefHeight="23.0" prefWidth="54.0" text="Войти" underline="true" />
+   </children>
+</Pane>

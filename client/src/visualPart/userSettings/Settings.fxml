@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.userSettings.ControllerSettings">
+   <children>
+      <Button layoutX="390.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickToChangeTariffPlan" prefHeight="50.0" prefWidth="160.0" text="Изменить тарифный план" />
+      <Button layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onAction="#clickToShowPacketService" prefHeight="50.0" prefWidth="150.0" text="Пакет услуг" />
+      <Button layoutX="10.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickToAskQuestion" prefHeight="50.0" prefWidth="150.0" text="Оставить вопрос" />
+      <Button layoutX="10.0" layoutY="300.0" mnemonicParsing="false" onAction="#clickToCheckConnection" prefHeight="50.0" prefWidth="150.0" text="Проверить соединение" />
+      <Button fx:id="balanceButton" layoutX="200.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickToShowBalance" prefHeight="50.0" prefWidth="150.0" text="Показать баланс" />
+      <Button fx:id="exitButton" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToExit" prefHeight="50.0" prefWidth="120.0" text="Выход" />
+      <Button fx:id="personalDataButton" layoutX="390.0" layoutY="300.0" mnemonicParsing="false" onAction="#clickToOpenPersonalData" prefHeight="50.0" prefWidth="160.0" text="Открыть личные данные" />
+      <Label layoutX="270.0" layoutY="10.0" prefHeight="150.0" prefWidth="300.0" text="Добро пожаловать в личный кабинет пользователя, где вы можете настроить подключение" wrapText="true">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

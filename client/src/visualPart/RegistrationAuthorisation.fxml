@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@pictures/background.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.ControllerRegistrationAuthorisation">
+   <children>
+      <Label alignment="CENTER" layoutX="200.0" layoutY="50.0" prefHeight="100.0" prefWidth="200.0" text="Войти">
+         <font>
+            <Font name="Segoe Print" size="50.0" />
+         </font></Label>
+      <TextField fx:id="loginTextField" layoutX="150.0" layoutY="200.0" prefHeight="30.0" prefWidth="300.0" promptText="Логин" />
+      <TextField fx:id="passwordTextField" layoutX="150.0" layoutY="250.0" prefHeight="30.0" prefWidth="300.0" promptText="Пароль" visible="false" />
+      <CheckBox fx:id="showPasswordCheckBox" layoutX="475.0" layoutY="250.0" mnemonicParsing="false" onAction="#clickToShowPassword" prefHeight="30.0" prefWidth="100.0" text="Показать" />
+      <Hyperlink fx:id="signUpHyperlink" layoutX="466.0" layoutY="329.0" onAction="#clickToSignUp" prefHeight="23.0" prefWidth="119.0" text="Зарегестрироваться" underline="true" />
+      <Button fx:id="signInButton" layoutX="350.0" layoutY="317.0" mnemonicParsing="false" onAction="#clickToSignIn" prefHeight="25.0" prefWidth="100.0" text="Вход" />
+      <ComboBox fx:id="roleComboBox" layoutX="150.0" layoutY="317.0" prefHeight="25.0" prefWidth="160.0" promptText="Роль" />
+      <PasswordField fx:id="passwordPasswordField" layoutX="150.0" layoutY="250.0" prefHeight="30.0" prefWidth="300.0" promptText="Пароль" />
+   </children>
+</Pane>

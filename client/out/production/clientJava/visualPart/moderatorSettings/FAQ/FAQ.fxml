@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.moderatorSettings.FAQ.ControllerFAQ">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <Button layoutX="219.0" layoutY="350.0" mnemonicParsing="false" onAction="#clickToAnswer" prefHeight="40.0" prefWidth="120.0" text="Ответить" />
+      <Label layoutX="93.0" layoutY="224.0" text="Вопрос" />
+      <Label layoutX="400.0" layoutY="224.0" text="Ответ" />
+      <TableView fx:id="questionsTableView" layoutX="150.0" layoutY="17.0" onMouseClicked="#getSelectedQuestion" prefHeight="200.0" prefWidth="420.0">
+        <columns>
+          <TableColumn fx:id="loginTableColumn" prefWidth="102.19999694824219" text="Пользователь" />
+          <TableColumn fx:id="questionTableColumn" prefWidth="316.79998779296875" text="Вопрос" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="answerTextArea" layoutX="293.0" layoutY="246.0" prefHeight="100.0" prefWidth="250.0" />
+      <TextArea fx:id="questionTextArea" layoutX="10.0" layoutY="246.0" prefHeight="100.0" prefWidth="250.0" />
+   </children>
+</Pane>

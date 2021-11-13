@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.userSettings.question.ControllerQuestion">
+   <children>
+      <VBox layoutX="58.0" layoutY="88.0" prefHeight="133.0" prefWidth="400.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Вопросы" />
+                  <ComboBox fx:id="questionComboBox" onAction="#clickToShowAnswer" prefWidth="250.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ответ" />
+                  <TextArea fx:id="answerTextArea" prefHeight="100.0" prefWidth="350.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></TextArea>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="100.0" layoutY="250.0" prefHeight="100.0" prefWidth="350.0">
+         <children>
+            <TextField fx:id="questionTextField" prefHeight="50.0" prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#clickToAskQuestion" prefHeight="30.0" prefWidth="120.0" text="Отправить">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+   </children>
+</Pane>

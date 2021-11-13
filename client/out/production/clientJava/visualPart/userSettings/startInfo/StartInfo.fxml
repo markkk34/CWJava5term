@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane prefHeight="287.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.userSettings.startInfo.ConrtrollerStartInfo">
+   <children>
+      <Label layoutX="42.0" layoutY="127.0" text="Тариф" />
+      <Label layoutX="36.0" layoutY="63.0" text="Имя" />
+      <ComboBox fx:id="tariffPlanComboBox" layoutX="115.0" layoutY="135.0" prefWidth="150.0" />
+      <TextField fx:id="nameTextField" layoutX="116.0" layoutY="68.0" />
+      <Button layoutX="148.0" layoutY="200.0" mnemonicParsing="false" onAction="#clickToConfirm" prefHeight="44.0" prefWidth="118.0" text="Подтвердить" />
+   </children>
+</Pane>

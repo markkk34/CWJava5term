@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.userSettings.personalData.ControllerPersonalData">
+   <children>
+      <Button fx:id="saveButton" layoutX="240.0" layoutY="320.0" mnemonicParsing="false" onAction="#clickToSave" prefHeight="50.0" prefWidth="120.0" text="Сохранить" />
+      <Button fx:id="backButton" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <VBox layoutX="40.0" layoutY="120.0" prefHeight="180.0" prefWidth="250.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Имя" />
+                  <TextField fx:id="nameTextField">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Фамилия" textFill="#0e0707">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></Label>
+                  <TextField fx:id="surnameTextField">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Возраст" />
+                  <TextField fx:id="ageTextField">
+                     <HBox.margin>
+                        <Insets left="21.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="104.0" prefWidth="200.0">
+               <children>
+                  <Label text="Адрес" />
+                  <TextField fx:id="addressTextField">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="300.0" layoutY="120.0" prefHeight="85.0" prefWidth="250.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Логин" />
+                  <TextField fx:id="loginTextField">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Пароль" />
+                  <TextField fx:id="passwordTextField">
+                     <HBox.margin>
+                        <Insets left="32.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.adminSettings.workWithModerators.ControllerWorkWithModerators">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <TableView fx:id="modersTableView" layoutX="140.0" layoutY="20.0" onMouseClicked="#getSelectedLoginInRow" prefHeight="200.0" prefWidth="455.0">
+        <columns>
+          <TableColumn fx:id="loginTableColumn" prefWidth="220.20000457763672" text="Логин" />
+          <TableColumn fx:id="passwordTableColumn" prefWidth="234.19998168945312" text="Пароль" />
+        </columns>
+      </TableView>
+      <Button layoutX="120.0" layoutY="345.0" mnemonicParsing="false" onAction="#clickToAddModer" prefHeight="50.0" prefWidth="120.0" text="Добавить" />
+      <Label layoutX="60.0" layoutY="310.0" text="Пароль" />
+      <Label layoutX="60.0" layoutY="270.0" text="Логин" />
+      <TextField fx:id="loginDeletingTextField" layoutX="380.0" layoutY="270.0" />
+      <TextField fx:id="passwordAddingTextField" layoutX="120.0" layoutY="310.0" />
+      <TextField fx:id="loginAddingTextField" layoutX="120.0" layoutY="270.0" />
+      <Button layoutX="380.0" layoutY="345.0" mnemonicParsing="false" onAction="#clickToDeleteModer" prefHeight="50.0" prefWidth="120.0" text="Удалить" />
+   </children>
+</Pane>

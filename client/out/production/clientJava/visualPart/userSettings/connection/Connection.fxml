@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.userSettings.connection.ControllerConnection">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <VBox layoutX="100.0" layoutY="100.0" prefHeight="250.0" prefWidth="400.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label text="Ваш статус подключения" />
+                  <TextField fx:id="statusTextField" prefHeight="30.0" prefWidth="250.0">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <Label prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Срок оплаты за услуги до 15 числа каждого месяца за предыдущий период. Проверить баланс счета можно в приложении Мой А1, в личном кабинете my.a1.by (вкладка &quot;Интернет для дома и офиса&quot;) или в контакт-центре по тел. 150. Также сумма к оплате автоматически выставляется в ЕРИП." wrapText="true">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </children>
+</Pane>

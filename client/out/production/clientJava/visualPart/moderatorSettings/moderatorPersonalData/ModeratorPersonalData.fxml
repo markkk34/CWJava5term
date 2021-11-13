@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.moderatorSettings.moderatorPersonalData.ControllerModeratorPersonalData">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <Label layoutX="170.0" layoutY="130.0" prefHeight="40.0" prefWidth="60.0" text="Логин">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="170.0" layoutY="190.0" prefHeight="40.0" prefWidth="60.0" text="Пароль">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <TextField fx:id="passwordTextField" layoutX="254.0" layoutY="196.0" />
+      <TextField fx:id="loginTextField" layoutX="254.0" layoutY="142.0" />
+      <Button layoutX="250.0" layoutY="267.0" mnemonicParsing="false" onAction="#clickToSavePersonalData" prefHeight="50.0" prefWidth="120.0" text="Сохранить" />
+   </children>
+</Pane>

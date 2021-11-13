@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" styleClass="back" stylesheets="@../../pictures/setts.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualPart.adminSettings.workWithAllTariffPlans.ControllerWorkWithAllTariffPlans">
+   <children>
+      <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickToBack" prefHeight="50.0" prefWidth="120.0" text="Назад" />
+      <TableView fx:id="tariffsTableView" layoutX="150.0" layoutY="20.0" onMouseClicked="#getSelectedRow" prefHeight="200.0" prefWidth="439.0">
+        <columns>
+          <TableColumn fx:id="tariffPlanTableColumn" prefWidth="203.1999969482422" text="Тариф" />
+          <TableColumn fx:id="costTableColumn" prefWidth="85.60003662109375" text="Цена" />
+            <TableColumn fx:id="speedTableColumn" prefWidth="150.0" text="Скорость" />
+        </columns>
+      </TableView>
+      <Button layoutX="90.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickToAddTariffPlan" prefHeight="50.0" prefWidth="120.0" text="Добавить" />
+      <Label layoutX="10.0" layoutY="277.0" text="Цена" />
+      <Label layoutX="10.0" layoutY="243.0" text="Тариф" />
+      <Label layoutX="10.0" layoutY="310.0" text="Скорость" />
+      <TextField fx:id="tariffPlanAddingTextField" layoutX="90.0" layoutY="239.0" />
+      <TextField fx:id="costAddingTextField" layoutX="90.0" layoutY="273.0" />
+      <TextField fx:id="speedAddingTextField" layoutX="90.0" layoutY="306.0" />
+      <TextField fx:id="speedChangingTextField" layoutX="272.0" layoutY="306.0" />
+      <TextField fx:id="costChangingTextField" layoutX="272.0" layoutY="274.0" />
+      <TextField fx:id="tariffPlanChangingTextField" layoutX="272.0" layoutY="239.0" />
+      <Button layoutX="272.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickToChangeTariffPlan" prefHeight="50.0" prefWidth="120.0" text="Изменить" />
+      <Button layoutX="445.0" layoutY="340.0" mnemonicParsing="false" onAction="#clickToDeleteTariff" prefHeight="50.0" prefWidth="120.0" text="Удалить" />
+      <TextField fx:id="tariffPlanDeletingTextField" disable="true" layoutX="445.0" layoutY="239.0" />
+   </children>
+</Pane>
